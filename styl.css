@@ -1,0 +1,43 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    font-family: sans-serif;
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 70px;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: white;
+    position: relative;
+}
+
+h1:before {
+    content: "Sorry...";
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #f6b93b;
+    overflow: hidden;
+    border-right: 4px solid #f6b93b;
+    animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 100%;
+    }
+    100% {
+        width: 0;
+    }
+}
